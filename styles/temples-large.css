@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    nav ul {
+        gap: 3rem;
+    }
+}
+
