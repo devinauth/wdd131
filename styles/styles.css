@@ -83,3 +83,34 @@ body {
     margin: 5px 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+  p {
+    font-weight: 400;
+  }
+/* 1. Define global variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+  }
+  
+  /* 2. Use media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* 3. Use ::after pseudo-element */
+  h1::after {
+    content: " 🌟";
+  }
+ 
+
+  
+  
