@@ -5,98 +5,98 @@ const temples = [
         location: "Panama City, Panama",
         dedicationDate: "November 20, 2005",
         area: 17000,
-        image: "images/panama_temple.jpg",
+        image: "images/panama.jpg",
     },
     {
         name: "Arequipa Peru Temple",
         location: "Arequipa, Peru",
         dedicationDate: "December 15, 2019",
         area: 28000,
-        image: "images/arequipa_peru_temple.jpg",
+        image: "images/arequipa_peru.jpg",
     },
     {
         name: "Atlanta Temple",
         location: "Atlanta, Georgia, USA",
         dedicationDate: "June 1, 1983",
         area: 25000,
-        image: "images/atlanta_temple.jpg",
+        image: "images/atlanta.jpg",
     },
     {
         name: "Bern Switzerland Temple",
         location: "Bern, Switzerland",
         dedicationDate: "October 11, 1955",
         area: 15000,
-        image: "images/bern_switzerland_temple.jpg",
+        image: "images/bern_switzerland.jpg",
     },
     {
         name: "Billings Montana Temple",
         location: "Billings, Montana, USA",
         dedicationDate: "May 19, 2008",
         area: 10500,
-        image: "images/billings_temple.jpg",
+        image: "images/billings.jpg",
     },
     {
         name: "Bountiful Utah Temple",
         location: "Bountiful, Utah, USA",
         dedicationDate: "June 22, 1995",
         area: 10000,
-        image: "images/bountiful_temple.jpg",
+        image: "images/bountiful.jpg",
     },
     {
         name: "Campinas Brazil Temple",
         location: "Campinas, Brazil",
         dedicationDate: "October 27, 2002",
         area: 22000,
-        image: "images/campinas_brazil_temple.jpg",
+        image: "images/campinas_brazil.jpg",
     },
     {
         name: "Brigham City Utah Temple",
         location: "Brigham City, Utah, USA",
         dedicationDate: "September 23, 2012",
         area: 22000,
-        image: "images/brigham_city_utah_temple.jpg",
+        image: "images/brigham_city_utah.jpg",
     },
     {
         name: "Philippines Cebu Temple",
         location: "Cebu City, Philippines",
         dedicationDate: "June 13, 2010",
         area: 9000,
-        image: "images/philippines_cebu_temple.jpg",
+        image: "images/philippines_cebu.jpg",
     },
     {
         name: "Salt Lake Temple",
         location: "Salt Lake City, Utah, USA",
         dedicationDate: "May 21, 1893",
         area: 105000,
-        image: "images/salt_lake_temple.jpg", // Replace with the correct image path
+        image: "images/salt_lake.jpg", // Replace with the correct image path
     },
     {
         name: "Kirtland Temple",
         location: "Kirtland, Ohio, USA",
         dedicationDate: "March 27, 1836",
         area: 12000,
-        image: "images/kirtland_temple.jpg", // Replace with the correct image path
+        image: "images/kirtland.jpg", // Replace with the correct image path
     },
     {
         name: "Laie Hawaii Temple",
         location: "Laie, Hawaii, USA",
         dedicationDate: "November 27, 1919",
         area: 93000,
-        image: "images/laie_hawaii_temple.jpg", // Replace with the correct image path
+        image: "images/laie_hawaii.jpg", // Replace with the correct image path
     },
     {
         name: "Los Angeles California Temple",
         location: "Los Angeles, California, USA",
         dedicationDate: "January 27, 1955",
         area: 120000,
-        image: "images/los_angeles_temple.jpg", // Replace with the correct image path
+        image: "images/los_angeles.jpg", // Replace with the correct image path
     },
     {
         name: "London England Temple",
         location: "London, England, UK",
         dedicationDate: "September 7, 1958",
         area: 89000,
-        image: "images/london_england_temple.jpg", // Replace with the correct image path
+        image: "images/london_england.jpg", // Replace with the correct image path
     }
 ];
 
