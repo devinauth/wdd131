@@ -63,7 +63,6 @@ const temples = [
         area: 9000,
         image: "images/philippines_cebu_temple.jpg",
     },
-    // Adding 5 new temples (2 new + 3 more)
     {
         name: "Salt Lake Temple",
         location: "Salt Lake City, Utah, USA",
