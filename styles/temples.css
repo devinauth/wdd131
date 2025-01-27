@@ -3,77 +3,96 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #4A0054;
-    color: #fff;
+    background-color: #333;
+    color: white;
     padding: 1rem;
     text-align: center;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0;
+header h1 {
     margin: 0;
-    list-style-type: none;
 }
 
-nav ul li a {
+/* Navigation Styling */
+#menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#menu a {
+    color: white;
     text-decoration: none;
-    color: #fff;
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content */
+/* Main Content Styling */
 main {
+    padding: 2rem;
     text-align: center;
-    padding: 1rem;
 }
 
-#gallery {
+/* Gallery Section */
+#temple-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 20px; /* Space between items */
-    padding: 10px; /* Padding around the gallery */
-    justify-items: center; /* Center align items horizontally */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
 }
 
-#gallery img {
-    width: 250px; /* Consistent width */
-    height: 150px; /* Consistent height */
-    object-fit: cover; /* Ensure images maintain aspect ratio */
-    border-radius: 5px; /* Optional: Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a slight shadow */
+.temple-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
 }
 
-
-figure {
-    margin: 0;
+.temple-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
-figure img {
+.temple-card p {
+    margin: 10px 0;
+}
+
+.temple-card img {
     width: 100%;
     height: auto;
+    max-height: 250px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the images fill the space */
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-figcaption {
-    margin-top: 0.5rem;
-    font-weight: bold;
-}
-
-/* Footer */
+/* Footer Styles */
 footer {
-    background-color: #4A0054;
-    color: #fff;
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
+footer p {
+    margin: 0;
+}
+
+
 
 
