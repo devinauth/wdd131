@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Confirmation</title>
-    <link rel="stylesheet" href="css/styl.css">
+    <link rel="stylesheet" href="styl.css">
 </head>
 <body>
 
@@ -13,17 +13,19 @@
     </header>
 
     <main>
-        <p>Your product review has been submitted successfully.</p>
-        <p>You have submitted <span id="review-count">0</span> reviews.</p>
-        <a href="form.html">Submit another review</a>
+        <p>Your review has been submitted successfully.</p>
+        <p>Total reviews submitted: <span id="review-count"></span></p>
+        <a href="form.html">Submit Another Review</a>
     </main>
 
     <footer>
-        <p>&copy;2024 🌸 Devi Nauth 🌸 Guyana</p>
-        <p>Last Modification: <span id="last-modified"></span></p>
+        <p>&copy;2025 🌸 Devi Nauth 🌸 Guyana</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+        document.getElementById("review-count").textContent = localStorage.getItem("reviewCount");
+    </script>
 </body>
 </html>
+
 

@@ -1,29 +1,30 @@
-// Product Array
+// Product Array (Simulating data from an external source)
 const products = [
-    { id: "product1", name: "Smartphone" },
-    { id: "product2", name: "Laptop" },
-    { id: "product3", name: "Tablet" },
-    { id: "product4", name: "Smartwatch" }
+    { id: "p1", name: "Smartphone" },
+    { id: "p2", name: "Laptop" },
+    { id: "p3", name: "Tablet" },
+    { id: "p4", name: "Smartwatch" },
+    { id: "p5", name: "Headphones" }
 ];
 
 // Populate Product Dropdown
 const productSelect = document.getElementById("product");
-if (productSelect) {
-    products.forEach(product => {
-        let option = document.createElement("option");
-        option.value = product.id;
-        option.textContent = product.name;
-        productSelect.appendChild(option);
-    });
+products.forEach(product => {
+    let option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    productSelect.appendChild(option);
+});
+
+// LocalStorage: Track Review Submissions
+if (localStorage.getItem("reviewCount") === null) {
+    localStorage.setItem("reviewCount", 0);
 }
 
-// Update Last Modified Date
+document.querySelector("form").addEventListener("submit", () => {
+    let count = parseInt(localStorage.getItem("reviewCount"));
+    localStorage.setItem("reviewCount", count + 1);
+});
+
+// Show Last Modification Date in Footer
 document.getElementById("last-modified").textContent = document.lastModified;
-
-// Review Counter
-if (window.location.pathname.includes("review.html")) {
-    let count = localStorage.getItem("reviewCount") || 0;
-    count++;
-    localStorage.setItem("reviewCount", count);
-    document.getElementById("review-count").textContent = count;
-}
