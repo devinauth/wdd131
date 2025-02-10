@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about healthy living and use our BMI calculator to track your health. Presented by Devi Nauth.">
+    <meta name="author" content="Devi Nauth">
+    <title>Healthy Living</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Healthy Living</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="healthy-living.html">Healthy Living</a></li>
+                <li><a href="family-wellness.html">Family Wellness</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>BMI Calculator</h2>
+        <label for="height">Height (m):</label>
+        <input type="number" id="height" step="0.01">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight">
+        <button onclick="calculateBMI()">Calculate</button>
+        <p id="bmi-result"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Devi Nauth</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,30 +1,48 @@
-// Product Array (Simulating data from an external source)
-const products = [
-    { id: "p1", name: "Smartphone" },
-    { id: "p2", name: "Laptop" },
-    { id: "p3", name: "Tablet" },
-    { id: "p4", name: "Smartwatch" },
-    { id: "p5", name: "Headphones" }
-];
-
-// Populate Product Dropdown
-const productSelect = document.getElementById("product");
-products.forEach(product => {
-    let option = document.createElement("option");
-    option.value = product.id;
-    option.textContent = product.name;
-    productSelect.appendChild(option);
+// Dark Mode Toggle
+const toggleButton = document.getElementById("dark-mode-toggle");
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
 });
 
-// LocalStorage: Track Review Submissions
-if (localStorage.getItem("reviewCount") === null) {
-    localStorage.setItem("reviewCount", 0);
+// Apply Dark Mode on Page Load
+if (localStorage.getItem("darkMode") === "true") {
+    document.body.classList.add("dark-mode");
 }
 
-document.querySelector("form").addEventListener("submit", () => {
-    let count = parseInt(localStorage.getItem("reviewCount"));
-    localStorage.setItem("reviewCount", count + 1);
-});
+// BMI Calculator
+function calculateBMI() {
+    let height = parseFloat(document.getElementById("height").value);
+    let weight = parseFloat(document.getElementById("weight").value);
+    let bmi = (weight / (height * height)).toFixed(2);
+    document.getElementById("bmi-result").innerText = `Your BMI is ${bmi}`;
+}
 
-// Show Last Modification Date in Footer
-document.getElementById("last-modified").textContent = document.lastModified;
+// Testimonial Slider
+let testimonials = ["Great advice!", "Helped my family a lot!", "Highly recommended!"];
+let currentTestimonial = 0;
+
+function showTestimonial() {
+    document.getElementById("testimonial-text").innerText = testimonials[currentTestimonial];
+}
+
+function prevTestimonial() {
+    currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+    showTestimonial();
+}
+
+function nextTestimonial() {
+    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    showTestimonial();
+}
+
+showTestimonial();
+
+// Feedback Form with Local Storage
+document.getElementById("feedback-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let message = document.getElementById("message").value;
+    localStorage.setItem("feedback", `${name}: ${message}`);
+    document.getElementById("feedback-message").innerText = "Thank you for your feedback!";
+});

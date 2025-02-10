@@ -3,60 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Devi Nauth">
+    <meta name="description" content="Welcome to the Health and Family website by Devi Nauth. Find resources on healthy living, wellness, and family well-being.">
     <meta name="author" content="Devi Nauth">
-    <title>WDD 131 - Dynamic Web Fundamentals - Devi Nauth</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
+    <title>Health & Family</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span>Devi Nauth</span></h1>
+        <h1>Welcome to Health & Family</h1>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
         <nav>
-            <a href="#">LinkedIn</a>
-            <a href="#">Canvas</a>
-            <a href="#">Scripture</a>
-            <a href="#">Final Project</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="healthy-living.html">Healthy Living</a></li>
+                <li><a href="family-wellness.html">Family Wellness</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <div class="about-me">
-                <p>
-                    My name is Devi Nauth. I am from the beautiful country of Guyana, located on the northern coast of South America. 
-                    I enjoy learning new things, exploring technology, and solving problems. In my free time, I love spending time with family and friends, cooking, and traveling.
-                </p>
-                <img src="images/devi.jpg" alt="Devi Nauth">
-            </div>
-        </section>
-        <section class="card">
-            <h2>About Guyana</h2>
-            <div class="location">
-                <img src="images/guyana-flag.jpg" alt="Official Flag of Guyana">
-                <p>
-                    Guyana is known for its lush rainforests, breathtaking waterfalls, and vibrant culture. It is home to the majestic Kaieteur Falls, one of the tallest single-drop waterfalls in the world. It is a land of friendly people, rich traditions, and diverse wildlife.
-                </p>
-            </div>
-        </section>
-        <aside class="card">
-            <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="#">Dev.to Community</a></li>
-                <li><a href="#">Smashing Magazine</a></li>
-                <li><a href="#">CSS Tricks</a></li>
-                <li><a href="#">W3 Schools</a></li>
-                <li><a href="#">Udemy</a></li>
-                <li><a href="#">Image Placeholder</a></li>
-            </ul>
-        </aside>
-    </main>
+
+    <section>
+        <h2>About Our Website</h2>
+        <p>We provide tips on health, nutrition, and family well-being.</p>
+    </section>
+
+    <section>
+        <h2>Feedback Form</h2>
+        <form id="feedback-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="feedback-message"></p>
+    </section>
+
     <footer>
-        <p>© <span id="currentyear"></span> Devi Nauth 🌸 Guyana</p>
-        <p id="lastModified">Last Modification: </p>
+        <p>&copy; 2025 Devi Nauth</p>
     </footer>
-    <script src="scripts/getdates.js" defer></script>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
-
-

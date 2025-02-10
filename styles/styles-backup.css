@@ -1,0 +1,116 @@
+/* Global Variables */
+:root {
+    --primary-color: #ffcc00; /* Yellow */
+    --secondary-color: #0072ce; /* Blue */
+    --text-color: #000000; /* Black */
+    --bg-color: #ffffff; /* White */
+    --font-family: Arial, sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Data Section */
+.data {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.data h2 {
+    margin-bottom: 10px;
+}
+
+.data ul {
+    list-style: none;
+    padding: 0;
+}
+
+.data li {
+    margin: 5px 0;
+}
+
+/* Weather Section */
+.weather {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.weather h2 {
+    margin-bottom: 10px;
+}
+
+.weather img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+  p {
+    font-weight: 400;
+  }
+/* 1. Define global variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+  }
+  
+  /* 2. Use media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* 3. Use ::after pseudo-element */
+  h1::after {
+    content: " 🌟";
+  }
+ 
+
+  
+  
